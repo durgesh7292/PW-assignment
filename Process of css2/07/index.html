@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 100px;
+        height: 150px;
+      }
+      .box {
+        height: 150px;
+        width: 100px;
+      }
+      .box1 {
+        background-color: blue;
+        position: relative;
+        top: 50px;
+        border: 2px solid black;
+      }
+      .box2 {
+        background-color: green;
+        position: relative;
+        left: 20px;
+        bottom: 75px;
+        border: 2px solid black;
+      }
+      .box3 {
+        background-color: yellow;
+        position: relative;
+        left: 50px;
+        bottom: 200px;
+        border: 2px solid black;
+      }
+
+      .box1:hover,
+      .box2:hover {
+        z-index: 100;
+      }
+
+      .pick {
+        width: 60px;
+        padding-top: 20px;
+        padding-left: 20px;
+      }
+      .buy {
+        width: 60px;
+        padding-top: 20px;
+        padding-left: 20px;
+      }
+      .cut {
+        width: 60px;
+        padding-top: 20px;
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1"><img class="pick" src="./pokoman.png" alt="" /></div>
+      <div class="box box2"><img class="buy" src="./pokoman.png" alt="" /></div>
+      <div class="box box3"><img class="cut" src="./pokoman.png" alt="" /></div>
+    </div>
+  </body>
+</html>
